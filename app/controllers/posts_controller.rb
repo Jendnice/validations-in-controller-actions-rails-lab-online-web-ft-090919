@@ -11,8 +11,6 @@ class PostsController < ApplicationController
     # @post.update(post_params)
     # redirect_to post_path(@post)
     
-    binding.pry 
-    
     @post.update(post_params)
     if @post.valid?
       redirect_to post_path(@post)
